@@ -1,5 +1,6 @@
 # Verilog Combo Lock FSM
 A Moore finite state machine designed in Verilog that creates the functionality of a combination lock.
+
 The Verilog file containing the design is __combolock.v__
 
 ### Functionality:
