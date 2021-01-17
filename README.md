@@ -22,5 +22,6 @@ The Verilog file containing the design is __combolock.v__
  
 ### Finite State Machine Design:
 - The state diagram for this FSM:
-
+![Block Diagram](https://github.com/areezvisram/Verilog-Combo-Lock-FSM/blob/master/images/State%20Diagram.jpg)
 - The block diagram for this FSM:
+![Block Diagram](https://github.com/areezvisram/Verilog-Combo-Lock-FSM/blob/master/images/Block%20Diagram.jpg)
