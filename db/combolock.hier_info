@@ -1,0 +1,95 @@
+|combolock
+Clock => Clock.IN2
+confirm => confirm.IN1
+Resetn => lock[0].ACLR
+Resetn => lock[1].PRESET
+Resetn => lock[2].PRESET
+Resetn => lock[3].ACLR
+Resetn => y[0].ACLR
+Resetn => y[1].ACLR
+Resetn => tries[0].ACLR
+Resetn => tries[1].ACLR
+Resetn => tries[2].ACLR
+Resetn => tries[3].ACLR
+Resetn => tries[4].ACLR
+Resetn => tries[5].ACLR
+Resetn => tries[6].ACLR
+Resetn => tries[7].ACLR
+Resetn => tries[8].ACLR
+Resetn => tries[9].ACLR
+Resetn => tries[10].ACLR
+Resetn => tries[11].ACLR
+Resetn => tries[12].ACLR
+Resetn => tries[13].ACLR
+Resetn => tries[14].ACLR
+Resetn => tries[15].ACLR
+Resetn => tries[16].ACLR
+Resetn => tries[17].ACLR
+Resetn => tries[18].ACLR
+Resetn => tries[19].ACLR
+Resetn => tries[20].ACLR
+Resetn => tries[21].ACLR
+Resetn => tries[22].ACLR
+Resetn => tries[23].ACLR
+Resetn => tries[24].ACLR
+Resetn => tries[25].ACLR
+Resetn => tries[26].ACLR
+Resetn => tries[27].ACLR
+Resetn => tries[28].ACLR
+Resetn => tries[29].ACLR
+Resetn => tries[30].ACLR
+Resetn => tries[31].ACLR
+Change => Change.IN1
+disp[7] << hexdisp:display.port1
+disp[6] << hexdisp:display.port1
+disp[5] << hexdisp:display.port1
+disp[4] << hexdisp:display.port1
+disp[3] << hexdisp:display.port1
+disp[2] << hexdisp:display.port1
+disp[1] << hexdisp:display.port1
+x3 => Equal0.IN0
+x3 => Equal1.IN0
+x3 => lock.DATAB
+x2 => Equal0.IN1
+x2 => Equal1.IN1
+x2 => lock.DATAB
+x1 => Equal0.IN2
+x1 => Equal1.IN2
+x1 => lock.DATAB
+x0 => Equal0.IN3
+x0 => Equal1.IN3
+x0 => lock.DATAB
+changepulse << inputcond:cpulse.port2
+confirmpulse << inputcond:epulse.port2
+
+
+|combolock|inputcond:cpulse
+Clock => y[0].CLK
+Clock => y[1].CLK
+A => Mux0.IN2
+A => Mux0.IN3
+A => Mux1.IN1
+pulse <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|combolock|inputcond:epulse
+Clock => y[0].CLK
+Clock => y[1].CLK
+A => Mux0.IN2
+A => Mux0.IN3
+A => Mux1.IN1
+pulse <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|combolock|hexdisp:display
+state[0] => Decoder0.IN1
+state[1] => Decoder0.IN0
+hex[7] <= <GND>
+hex[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

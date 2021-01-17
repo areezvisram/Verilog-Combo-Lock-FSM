@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/McMaster/Year 2/Semester 1 - Fall/SFWRENG 2DA4 - Digital Systems and Interfacing/Labs/Lab 4/Combo Lock/simulation/qsim
+vcombolock
+Z1 !s110 1605637014
+!i10b 1
+!s100 ]Pc:ABnH_UDdj<EQ1@io>2
+I6^aT@8iiHb`UUz6;f[J593
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1605637013
+8combolock.vo
+Fcombolock.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1605637014.000000
+!s107 combolock.vo|
+!s90 -work|work|combolock.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vcombolock_vlg_vec_tst
+R1
+!i10b 1
+!s100 773PdeHCWWNjd=NE]70<83
+IF`=azz^0e6l2jF_zLOYHZ0
+R2
+R0
+w1605637011
+8combolock.vwf.vt
+Fcombolock.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 combolock.vwf.vt|
+!s90 -work|work|combolock.vwf.vt|
+!i113 1
+R5
+R6
