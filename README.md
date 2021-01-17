@@ -24,3 +24,4 @@ The Verilog file containing the design is __combolock.v__
 - The state diagram for this FSM:
 
 - The block diagram for this FSM:
+![Block Diagram]https://github.com/areezvisram/Verilog-Combo-Lock-FSM/blob/master/images/Block%20Diagram.jpg
